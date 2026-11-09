@@ -18,17 +18,10 @@ function addTask() {
   const span = document.createElement('span');
   span.textContent = taskText;
 
-  const deleteButton = document.createElement('button');
-  deleteButton.textContent = 'Удалить';
-  deleteButton.className = 'delete-btn';
-  deleteButton.addEventListener('click', function () {
-    li.remove();
-  });
-
   li.appendChild(checkbox);
   li.appendChild(span);
-  li.appendChild(deleteButton);
   taskList.appendChild(li);
+
   taskInput.value = '';
   taskInput.focus();
 }
