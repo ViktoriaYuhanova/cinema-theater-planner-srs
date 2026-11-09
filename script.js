@@ -6,11 +6,9 @@ function addTask() {
     alert('Введите текст задачи!');
     return;
   }
-
   const taskList = document.getElementById('taskList');
   const li = document.createElement('li');
 
-  // Чекбокс для отметки выполнения
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
   checkbox.addEventListener('change', function () {
@@ -31,7 +29,6 @@ function addTask() {
   li.appendChild(span);
   li.appendChild(deleteButton);
   taskList.appendChild(li);
-
   taskInput.value = '';
   taskInput.focus();
 }
