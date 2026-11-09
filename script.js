@@ -6,6 +6,7 @@ function addTask() {
     alert('Введите текст задачи!');
     return;
   }
+
   const taskList = document.getElementById('taskList');
   const li = document.createElement('li');
 
