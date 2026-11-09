@@ -25,3 +25,4 @@ function addTask() {
   taskInput.value = '';
   taskInput.focus();
 }
+//version 1.0
