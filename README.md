@@ -23,6 +23,21 @@
 Issues
 
 В разделе Issues представлены отдельные задачи проекта, содержащие User Story и критерии приёмки.
+Схема БД для приложения «Умный список задач» спроектирована и приведена к 3NF (СУБД: SQLite).
+
+| Файл | Описание |
+|---|---|
+| [database/schema.sql](database/schema.sql) | DDL: таблицы, ключи, ограничения, индексы |
+| [database/seed_data.sql](database/seed_data.sql) | Тестовые данные |
+| [database/normalization.md](database/normalization.md) | Описание процесса нормализации |
+| [docs/database/er_diagram.png](docs/database/er_diagram.png) | ER-диаграмма (есть и SVG) |
+
+Таблицы: Users, Projects, Tasks, Categories, Labels, Task_Categories, Task_Labels.
+
+Как запустить: выполнить `schema.sql`, затем `seed_data.sql` на https://sqliteonline.com/ (SQLite).
+
+![ER-диаграмма](docs/database/er_diagram.png)
+
 
 Автор
 
